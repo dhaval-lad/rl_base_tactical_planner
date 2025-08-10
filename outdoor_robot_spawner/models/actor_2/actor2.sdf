@@ -1,0 +1,2427 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version='1.7'>
+  <actor name='actor_2'>
+    <plugin name='actor_collisions_plugin' filename='libActorCollisionsPlugin.so'>
+      <scaling collision='LHipJoint_LeftUpLeg_collision' scale='
+      0.01
+      0.001
+      0.001
+'/>
+      <sensor name='contact_LHipJoint_LeftUpLeg' type='contact'>
+        <contact>
+          <collision>LHipJoint_LeftUpLeg_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='LeftUpLeg_LeftLeg_collision' scale='
+      8.0
+      8.0
+      1.0
+'/>
+      <sensor name='contact_LeftUpLeg_LeftLeg' type='contact'>
+        <contact>
+          <collision>LeftUpLeg_LeftLeg_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='LeftLeg_LeftFoot_collision' scale='
+      8.0
+      8.0
+      1.0
+'/>
+      <sensor name='contact_LeftLeg_LeftFoot' type='contact'>
+        <contact>
+          <collision>LeftLeg_LeftFoot_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='LeftFoot_LeftToeBase_collision' scale='
+      4.0
+      4.0
+      1.5
+'/>
+      <sensor name='contact_LeftFoot_LeftToeBase' type='contact'>
+        <contact>
+          <collision>LeftFoot_LeftToeBase_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='RHipJoint_RightUpLeg_collision' scale='
+      0.01
+      0.001
+      0.001
+'/>
+      <sensor name='contact_RHipJoint_RightUpLeg' type='contact'>
+        <contact>
+          <collision>RHipJoint_RightUpLeg_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='RightUpLeg_RightLeg_collision' scale='
+      8.0
+      8.0
+      1.0
+'/>
+      <sensor name='contact_RightUpLeg_RightLeg' type='contact'>
+        <contact>
+          <collision>RightUpLeg_RightLeg_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='RightLeg_RightFoot_collision' scale='
+      8.0
+      8.0
+      1.0
+'/>
+      <sensor name='contact_RightLeg_RightFoot' type='contact'>
+        <contact>
+          <collision>RightLeg_RightFoot_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='RightFoot_RightToeBase_collision' scale='
+      4.0
+      4.0
+      1.5
+'/>
+      <sensor name='contact_RightFoot_RightToeBase' type='contact'>
+        <contact>
+          <collision>RightFoot_RightToeBase_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='Spine_Spine1_collision' scale='
+      0.01
+      0.001
+      0.001
+'/>
+      <sensor name='contact_Spine_Spine1' type='contact'>
+        <contact>
+          <collision>Spine_Spine1_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='Neck_Neck1_collision' scale='
+      0.01
+      0.001
+      0.001
+'/>
+      <sensor name='contact_Neck_Neck1' type='contact'>
+        <contact>
+          <collision>Neck_Neck1_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='Neck1_Head_collision' scale='
+      5.0
+      5.0
+      3.0
+'/>
+      <sensor name='contact_Neck1_Head' type='contact'>
+        <contact>
+          <collision>Neck1_Head_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='LeftShoulder_LeftArm_collision' scale='
+      0.01
+      0.001
+      0.001
+'/>
+      <sensor name='contact_LeftShoulder_LeftArm' type='contact'>
+        <contact>
+          <collision>LeftShoulder_LeftArm_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='LeftArm_LeftForeArm_collision' scale='
+      5.0
+      5.0
+      1.0
+'/>
+      <sensor name='contact_LeftArm_LeftForeArm' type='contact'>
+        <contact>
+          <collision>LeftArm_LeftForeArm_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='LeftForeArm_LeftHand_collision' scale='
+      5.0
+      5.0
+      1.0
+'/>
+      <sensor name='contact_LeftForeArm_LeftHand' type='contact'>
+        <contact>
+          <collision>LeftForeArm_LeftHand_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='LeftFingerBase_LeftHandIndex1_collision' scale='
+      4.0
+      4.0
+      3.0
+'/>
+      <sensor name='contact_LeftFingerBase_LeftHandIndex1' type='contact'>
+        <contact>
+          <collision>LeftFingerBase_LeftHandIndex1_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='RightShoulder_RightArm_collision' scale='
+      0.01
+      0.001
+      0.001
+'/>
+      <sensor name='contact_RightShoulder_RightArm' type='contact'>
+        <contact>
+          <collision>RightShoulder_RightArm_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='RightArm_RightForeArm_collision' scale='
+      5.0
+      5.0
+      1.0
+'/>
+      <sensor name='contact_RightArm_RightForeArm' type='contact'>
+        <contact>
+          <collision>RightArm_RightForeArm_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='RightForeArm_RightHand_collision' scale='
+      5.0
+      5.0
+      1.0
+'/>
+      <sensor name='contact_RightForeArm_RightHand' type='contact'>
+        <contact>
+          <collision>RightForeArm_RightHand_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='RightFingerBase_RightHandIndex1_collision' scale='
+      4.0
+      4.0
+      3.0
+'/>
+      <sensor name='contact_RightFingerBase_RightHandIndex1' type='contact'>
+        <contact>
+          <collision>RightFingerBase_RightHandIndex1_collision</collision>
+        </contact>
+      </sensor>
+      <scaling collision='LowerBack_Spine_collision' scale='
+      12.0
+      20.0
+      5.0
+' pose='0.05 0 0 0 -0.2 0'/>
+      <sensor name='contact_LowerBack_Spine' type='contact'>
+        <contact>
+          <collision>LowerBack_Spine_collision</collision>
+        </contact>
+      </sensor>
+    </plugin>
+    <skin>
+      <filename>walk.dae</filename>
+      <scale>1</scale>
+    </skin>
+    <animation name='walking'>
+      <filename>walk.dae</filename>
+      <scale>1</scale>
+      <interpolate_x>1</interpolate_x>
+    </animation>
+    <script>
+      <loop>1</loop>
+      <delay_start>0</delay_start>
+      <auto_start>1</auto_start>
+      <trajectory id='0' type='walking'>
+        <waypoint>
+          <time>0</time>
+          <pose>-13.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>2</time>
+          <pose>-12.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>4</time>
+          <pose>-11.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>6</time>
+          <pose>-10.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>8</time>
+          <pose>-9.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>10</time>
+          <pose>-8.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>12</time>
+          <pose>-7.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>14</time>
+          <pose>-6.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>16</time>
+          <pose>-5.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>18</time>
+          <pose>-4.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>20</time>
+          <pose>-3.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>22</time>
+          <pose>-2.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>24</time>
+          <pose>-1.0 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>25</time>
+          <pose>-0.5 -5.7 0.1 0 0 0</pose>
+        </waypoint>
+        <waypoint>
+          <time>26</time>
+          <pose>-0.5 -6 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>28</time>
+          <pose>-0.5 -7 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>30</time>
+          <pose>-0.5 -8 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>32</time>
+          <pose>-0.5 -9 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>34</time>
+          <pose>-0.5 -10 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>36</time>
+          <pose>-0.5 -11 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>38</time>
+          <pose>-0.5 -12 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>40</time>
+          <pose>-0.5 -13 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>42</time>
+          <pose>-0.5 -14 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>44</time>
+          <pose>-0.5 -15 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>46</time>
+          <pose>-0.5 -16 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>48</time>
+          <pose>-0.5 -17 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>50</time>
+          <pose>-0.5 -18 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>52</time>
+          <pose>-0.5 -19 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>54</time>
+          <pose>-0.5 -20 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>56</time>
+          <pose>-0.5 -21 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>58</time>
+          <pose>-0.5 -22 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>60</time>
+          <pose>-0.5 -23 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>62</time>
+          <pose>-0.5 -24 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>64</time>
+          <pose>-0.5 -25 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>66</time>
+          <pose>-0.5 -26 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>68</time>
+          <pose>-0.5 -27 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>70</time>
+          <pose>-0.5 -28 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>72</time>
+          <pose>-0.5 -29 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>74</time>
+          <pose>-0.5 -30 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>76</time>
+          <pose>-0.5 -31 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>78</time>
+          <pose>-0.5 -32 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>80</time>
+          <pose>-0.5 -33 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>82</time>
+          <pose>-0.5 -34 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>84</time>
+          <pose>-0.5 -35 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>86</time>
+          <pose>-0.5 -36 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>88</time>
+          <pose>-0.5 -37 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>90</time>
+          <pose>-0.5 -38 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>92</time>
+          <pose>-0.5 -39 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>94</time>
+          <pose>-0.5 -40 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>96</time>
+          <pose>-0.5 -41 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>98</time>
+          <pose>-0.5 -42 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>100</time>
+          <pose>-0.5 -43 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>102</time>
+          <pose>-0.5 -44 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>104</time>
+          <pose>-0.5 -45 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>106</time>
+          <pose>-0.5 -46 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>108</time>
+          <pose>-0.5 -47 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>110</time>
+          <pose>-0.5 -48 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>112</time>
+          <pose>-0.5 -49 0.1 0 0 -1.57</pose>
+        </waypoint>
+        <waypoint>
+          <time>114</time>
+          <pose>-0.5 -50 0.1 0 0 -1.57</pose>
+        </waypoint>
+      </trajectory>
+    </script>
+    <link name='actor_2_pose'>
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <visual name='actor_visual'>
+        <geometry>
+          <mesh>
+            <uri>walk.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+      </visual>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+        <mass>1</mass>
+      </inertial>
+      <enable_wind>0</enable_wind>
+    </link>
+   <link name="Hips">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='Hips__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 0 1 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LHipJoint">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0 0 0 -1.96446 0.68846 -2.58604</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LHipJoint__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='LHipJoint_LeftUpLeg__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.153556</size>
+          </box>
+        </geometry>
+        <pose>-0 0.076778 0 -1.5708 -0.436252 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='LHipJoint_LeftUpLeg_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.153556</size>
+          </box>
+        </geometry>
+        <pose>-0 0.076778 0 -1.5708 -0.436252 0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LeftUpLeg">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.045484 0.097562 -0.10951 -1.5708 -0.017454 -1.5708</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftUpLeg__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='LeftUpLeg_LeftLeg__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.43615</size>
+          </box>
+        </geometry>
+        <pose>-0 0.218075 -0 1.5708 -3e-06 -3.14159</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='LeftUpLeg_LeftLeg_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.43615</size>
+          </box>
+        </geometry>
+        <pose>-0 0.218075 -0 1.5708 -3e-06 -3.14159</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name='LeftLeg'>
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.045484 0.08995 -0.545594 -1.5708 -0.018883 -1.5708</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftLeg__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='LeftLeg_LeftFoot__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.445971</size>
+          </box>
+        </geometry>
+        <pose>0 0.222985 -0 1.5708 -2e-06 3.14159</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='LeftLeg_LeftFoot_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.445971</size>
+          </box>
+        </geometry>
+        <pose>0 0.222985 -0 1.5708 -2e-06 3.14159</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LeftFoot">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.045484 0.081529 -0.991485 -2.86201 -0.004819 1.5644</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftFoot__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='LeftFoot_LeftToeBase__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.137078</size>
+          </box>
+        </geometry>
+        <pose>0 0.068539 -0 1.57112 -1.56578 3.14127</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='LeftFoot_LeftToeBase_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.137078</size>
+          </box>
+        </geometry>
+        <pose>0 0.068539 -0 1.57112 -1.56578 3.14127</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LeftToeBase">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.177238 0.080868 -1.02931 3.14159 -0 1.5708</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftToeBase__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RHipJoint">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0 0 0 -1.96446 -0.662808 -0.520328</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RHipJoint__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='RHipJoint_RightUpLeg__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.150431</size>
+          </box>
+        </geometry>
+        <pose>0 0.075216 0 1.5708 -0.456725 3.14159</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='RHipJoint_RightUpLeg_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.150431</size>
+          </box>
+        </geometry>
+        <pose>0 0.075216 0 1.5708 -0.456725 3.14159</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightUpLeg">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.045484 -0.092565 -0.10951 -1.5708 0.017454 -1.5708</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightUpLeg__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='RightUpLeg_RightLeg__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.441703</size>
+          </box>
+        </geometry>
+        <pose>-0 0.220852 0 -1.5708 -2e-05 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='RightUpLeg_RightLeg_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.441703</size>
+          </box>
+        </geometry>
+        <pose>-0 0.220852 0 -1.5708 -2e-05 0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightLeg">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.045484 -0.084856 -0.551146 -1.5708 0.018902 -1.5708</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightLeg__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='RightLeg_RightFoot__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.440154</size>
+          </box>
+        </geometry>
+        <pose>-0 0.220077 -0 -1.5708 -2.9e-05 -0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='RightLeg_RightFoot_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.440154</size>
+          </box>
+        </geometry>
+        <pose>-0 0.220077 -0 -1.5708 -2.9e-05 -0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightFoot">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.045484 -0.076537 -0.991221 -2.81408 0.005615 1.57863</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightFoot__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='RightFoot_RightToeBase__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.145278</size>
+          </box>
+        </geometry>
+        <pose>-0 0.072639 -0 -1.57103 -1.56487 0.000233</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='RightFoot_RightToeBase_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.145278</size>
+          </box>
+        </geometry>
+        <pose>-0 0.072639 -0 -1.57103 -1.56487 0.000233</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightToeBase">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.183038 -0.075721 -1.03795 3.14159 -0 1.5708</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightToeBase__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LowerBack">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0 0 0 1.76781 -0.000162 1.57081</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LowerBack__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='LowerBack_Spine__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.134285</size>
+          </box>
+        </geometry>
+        <pose>0 0.067142 0 1.5705 -1.56997 -3.14129</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='LowerBack_Spine_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.134285</size>
+          </box>
+        </geometry>
+        <pose>0 0.067142 0 1.5705 -1.56997 -3.14129</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name='Spine'>
+
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.026286 -2.1e-05 0.131687 1.55532 0.026085 1.57059</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='Spine__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='Spine_Spine1__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.132976</size>
+          </box>
+        </geometry>
+        <pose>-0 0.066488 -0 -1.5708 0.535365 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='Spine_Spine1_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.132976</size>
+          </box>
+        </geometry>
+        <pose>-0 0.066488 -0 -1.5708 0.535365 0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name='Spine1'>
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.024228 0.003447 0.264602 1.55532 0.001964 1.57097</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='Spine1__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="Neck">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.024228 0.003447 0.264602 1.70269 0.004587 1.57496</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='Neck__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='Neck_Neck1__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.114158</size>
+          </box>
+        </geometry>
+        <pose>0 0.057079 -0 -1.57081 -1.53593 9e-06</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='Neck_Neck1_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.114158</size>
+          </box>
+        </geometry>
+        <pose>0 0.057079 -0 -1.57081 -1.53593 9e-06</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="Neck1">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.039239 0.004029 0.377767 1.41714 -0.001065 1.57666</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='Neck1__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='Neck1_Head__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.091751</size>
+          </box>
+        </geometry>
+        <pose>-0 0.045875 0 1.57073 1.56383 3.14153</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='Neck1_Head_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.091751</size>
+          </box>
+        </geometry>
+        <pose>-0 0.045875 0 1.57073 1.56383 3.14153</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="Head">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.025197 0.00385 0.468437 1.50823 -4.5e-05 1.57161</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='Head__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LeftShoulder">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.024228 0.003447 0.264602 0.861273 1.26292 1.04166</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftShoulder__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='LeftShoulder_LeftArm__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.214115</size>
+          </box>
+        </geometry>
+        <pose>-0 0.107058 0 -1.5708 0.204274 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='LeftShoulder_LeftArm_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.214115</size>
+          </box>
+        </geometry>
+        <pose>-0 0.107058 0 -1.5708 0.204274 0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LeftArm">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.018043 0.207494 0.313829 3e-06 1.57079 3e-06</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftArm__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='LeftArm_LeftForeArm__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.319492</size>
+          </box>
+        </geometry>
+        <pose>-0 0.159746 0 -1.5708 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='LeftArm_LeftForeArm_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.319492</size>
+          </box>
+        </geometry>
+        <pose>-0 0.159746 0 -1.5708 -0 0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LeftForeArm">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.018042 0.526986 0.313829 3e-06 1.57079 3e-06</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftForeArm__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='LeftForeArm_LeftHand__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.232586</size>
+          </box>
+        </geometry>
+        <pose>0 0.116293 -0 -1.5708 -0 -0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='LeftForeArm_LeftHand_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.232586</size>
+          </box>
+        </geometry>
+        <pose>0 0.116293 -0 -1.5708 -0 -0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LeftHand">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.018042 0.759572 0.313829 3e-06 1.57079 3e-06</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftHand__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LeftFingerBase">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.018042 0.759572 0.313829 3e-06 1.57079 3e-06</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftFingerBase__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='LeftFingerBase_LeftHandIndex1__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.032808</size>
+          </box>
+        </geometry>
+        <pose>0 0.016404 -0 -1.5708 -0 -0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='LeftFingerBase_LeftHandIndex1_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.032808</size>
+          </box>
+        </geometry>
+        <pose>0 0.016404 -0 -1.5708 -0 -0</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LeftHandIndex1">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.018042 0.792381 0.313829 3e-06 1.57079 3e-06</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LeftHandIndex1__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="LThumb">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.018043 0.759572 0.313829 -3.14159 0.785398 2.35619</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='LThumb__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightShoulder">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>0.024228 0.003447 0.264602 1.17558 -1.21236 1.84664</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightShoulder__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='RightShoulder_RightArm__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.203532</size>
+          </box>
+        </geometry>
+        <pose>0 0.101766 0 1.5708 0.143241 -3.14159</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='RightShoulder_RightArm_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.203532</size>
+          </box>
+        </geometry>
+        <pose>0 0.101766 0 1.5708 0.143241 -3.14159</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightArm">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.003261 -0.18715 0.330499 0.040063 -1.57079 3.10153</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightArm__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='RightArm_RightForeArm__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.32836</size>
+          </box>
+        </geometry>
+        <pose>-0 0.16418 -0 1.5708 -0 3.14159</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='RightArm_RightForeArm_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.32836</size>
+          </box>
+        </geometry>
+        <pose>-0 0.16418 -0 1.5708 -0 3.14159</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightForeArm">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.003261 -0.51551 0.330499 0.042483 -1.57079 3.09911</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightForeArm__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='RightForeArm_RightHand__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.233209</size>
+          </box>
+        </geometry>
+        <pose>0 0.116605 -0 1.5708 -0 3.14159</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='RightForeArm_RightHand_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.233209</size>
+          </box>
+        </geometry>
+        <pose>0 0.116605 -0 1.5708 -0 3.14159</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightHand">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.003261 -0.748719 0.330499 0.042483 -1.57079 3.09911</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightHand__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightFingerBase">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.003261 -0.748719 0.330499 0.042483 -1.57079 3.09911</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightFingerBase__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='RightFingerBase_RightHandIndex1__SKELETON_VISUAL__'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.046334</size>
+          </box>
+        </geometry>
+        <pose>-0 0.023167 0 1.5708 -0 3.14159</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+      <collision name='RightFingerBase_RightHandIndex1_collision'>
+        <geometry>
+          <box>
+            <size>0.02 0.02 0.046334</size>
+          </box>
+        </geometry>
+        <pose>-0 0.023167 0 1.5708 -0 3.14159</pose>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RightHandIndex1">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.003261 -0.795053 0.330499 0.042483 -1.57079 3.09911</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RightHandIndex1__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+    <link name="RThumb">
+      <gravity>0</gravity>
+      <self_collide>0</self_collide>
+      <pose>-0.003261 -0.748719 0.330499 3.14159 -0.785398 0.785398</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>4e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>4e-05</iyy>
+          <iyz>0</iyz>
+          <izz>4e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='RThumb__SKELETON_VISUAL__'>
+        <geometry>
+          <sphere>
+            <radius>0.02</radius>
+          </sphere>
+        </geometry>
+        <pose>0 0 0 0 -0 0</pose>
+        <material>
+          <script>
+            <name>__default__</name>
+            <uri>__default__</uri>
+          </script>
+          <ambient>1 1 0 1</ambient>
+        </material>
+      </visual>
+      <enable_wind>0</enable_wind>
+    </link>
+  </actor>
+    
+    
+  <model name='actor_2'>
+    <pose>-0.749902 -0.617409 1.04214 1.5546 0.052967 -2.49491</pose>
+    <scale>1 1 1</scale>
+    <link name="Head">
+      <pose>-0.789703 -0.587138 1.50815 1.80477 -0.081158 -2.62771</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+   <link name="Hips">
+      <pose>-0.757572 -0.60687 1.04246 1.55604 0.055514 -2.5087</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LHipJoint">
+      <pose>-0.757572 -0.60687 1.04246 -1.89432 0.670487 -0.337859</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LThumb">
+      <pose>-1.02366 -0.687037 0.847373 -1.60159 0.213898 -0.787443</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LeftArm">
+      <pose>-0.937588 -0.711857 1.37408 -1.68854 0.045508 0.149692</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LeftFingerBase">
+      <pose>-1.02366 -0.687037 0.847373 -1.72073 0.625439 -0.008101</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LeftFoot">
+      <pose>-0.745603 -0.797411 0.21041 -2.04612 -0.016046 -2.5504</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LeftForeArm">
+      <pose>-0.946263 -0.75112 1.05713 -1.23441 0.299784 0.177944</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LeftHand">
+      <pose>-1.02366 -0.687037 0.847373 -1.27921 0.343444 0.036472</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LeftHandIndex1">
+      <pose>-1.0427 -0.691784 0.821073 -1.70941 0.502371 0.01304</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name='LeftLeg'>
+      <pose>-0.934611 -0.526287 0.509838 -2.40543 0.011414 0.619137</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LeftShoulder">
+      <pose>-0.792948 -0.570679 1.30342 1.12661 1.19663 -2.84094</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LeftToeBase">
+      <pose>-0.78219 -0.746417 0.088544 -2.46852 -0.019089 -2.54068</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LeftUpLeg">
+      <pose>-0.859104 -0.622941 0.928388 -1.28602 0.012784 0.619538</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="LowerBack">
+      <pose>-0.757572 -0.60687 1.04246 1.8604 0.055543 -2.52384</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="Neck">
+      <pose>-0.792948 -0.570679 1.30342 1.45632 0.07731 -2.59141</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="Neck1">
+      <pose>-0.793596 -0.586375 1.41649 1.54156 -0.031879 -2.59266</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RHipJoint">
+      <pose>-0.757572 -0.60687 1.04246 -2.01797 -0.702512 1.71753</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RThumb">
+      <pose>-0.614742 -0.45177 0.804942 -1.08146 -0.470711 1.65038</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightArm">
+      <pose>-0.615579 -0.483653 1.35232 -1.68298 0.056141 0.619266</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightFingerBase">
+      <pose>-0.614742 -0.45177 0.804942 -1.12957 -0.406815 0.730486</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightFoot">
+      <pose>-0.772194 -0.563259 0.072822 -2.76276 -0.069402 -2.45755</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightForeArm">
+      <pose>-0.609151 -0.524214 1.02654 -1.29775 -0.162774 0.60163</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightHand">
+      <pose>-0.614742 -0.45177 0.804942 -1.33938 -0.218383 0.820471</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightHandIndex1">
+      <pose>-0.615597 -0.42597 0.766465 -1.14861 -0.293839 0.785855</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightLeg">
+      <pose>-0.78503 -0.482325 0.50528 -1.73065 0.097966 0.702577</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightShoulder">
+      <pose>-0.792948 -0.570679 1.30342 1.28552 -1.31769 -2.39131</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightToeBase">
+      <pose>-0.860378 -0.461002 0.019222 -2.91569 -0.075026 -2.46267</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name="RightUpLeg">
+      <pose>-0.706036 -0.510659 0.938937 -1.40555 0.096539 0.702338</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name='Spine'>
+      <pose>-0.785607 -0.579747 1.17095 1.65834 0.007392 -2.54508</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name='Spine1'>
+      <pose>-0.792948 -0.570679 1.30342 1.61103 -0.093234 -2.56454</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+    <link name='actor_2_pose'>
+      <pose>-0.749902 -0.617409 1.04214 1.5546 0.052967 -2.49491</pose>
+      <velocity>0 0 0 0 -0 0</velocity>
+      <acceleration>0 0 0 0 -0 0</acceleration>
+      <wrench>0 0 0 0 -0 0</wrench>
+    </link>
+  </model>
+</sdf>
