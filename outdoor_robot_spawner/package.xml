@@ -5,6 +5,7 @@
   <version>0.0.0</version>
   <description>This package creates a simulation in Gazebo which includes a differential drive robot with Lidar and a Hospital world</description>
   <maintainer email="tommaso.vandermeer@student.unisi.it">Tommaso Van Der Meer</maintainer>
+  <maintainer email="dhaval_lad@todo.todo">Dhaval Lad (modified for tactical decision maker with discrete action space)</maintainer>
   <license>I am a student, I dont know what to put here :)</license>
 
   <depend>rclpy</depend>
@@ -29,6 +30,13 @@
   <depend>optuna</depend>
   <depend>tensorboard</depend>
 
+  <!-- Added mode dependencies -->
+  <depend>grasshopper_description</depend>
+  <depend>grasshopper_gazebo</depend>
+  <depend>dynamic_map</depend>
+  <depend>actor_collision_plugin</depend>
+  <depend>object_detection</depend>
+  <depend>objectdetection_msgs</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

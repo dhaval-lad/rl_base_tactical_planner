@@ -11,6 +11,7 @@ import time
 import matplotlib.pyplot as plt
 import os
 from datetime import datetime
+from ament_index_python.packages import get_package_share_directory
 
 class OutDoorEnv(RobotController, Env):
     """
@@ -1027,9 +1028,16 @@ class OutDoorEnv(RobotController, Env):
 
         # Save the plot to a file with a timestamp in the filename
         timestamp = datetime.now().strftime('%d%m%Y_%H%M%S')
-        save_path = os.path.expanduser(
-            f"~/ros2_ws/src/Hospitalbot-Path-Planning/outdoor_robot_spawner/evaluation_plots/performance_plot_{timestamp}.png"
-        )
+        # Dynamically find the package path using ROS2 ament_index_python
+        try:
+            package_path = get_package_share_directory('outdoor_robot_spawner')
+        except Exception as e:
+            self.get_logger().error(f"Could not find package path: {e}")
+            package_path = os.path.expanduser("~")  # fallback to home if not found
+
+        eval_dir = os.path.join(package_path, 'evaluation_plots')
+        os.makedirs(eval_dir, exist_ok=True)
+        save_path = os.path.join(eval_dir, f"performance_plot_{timestamp}.png")
         plt.savefig(save_path, bbox_inches='tight', dpi=300)
         self.get_logger().info(f"Plot saved at: {save_path}")
 

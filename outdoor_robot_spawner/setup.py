@@ -26,28 +26,26 @@ setup(
         (os.path.join('share', package_name,'worlds/'), glob('./worlds/*')),
 
         # Path to the mobile robot sdf and config file
-        (os.path.join('share', package_name,'models/mobile_warehouse_robot/'), glob('./models/mobile_warehouse_robot/*')),
+        (os.path.join('share', package_name,'models/4WD_robot/'), glob('./models/4WD_robot/*')),
         
         # Path to the pioneer sdf file
-        (os.path.join('share', package_name,'models/pioneer3at/'), glob('./models/pioneer3at/model.sdf')),
+        (os.path.join('share', package_name,'models/4WD_robot/'), glob('./models/4WD_robot/model.sdf')),
 
         # Path to the pioneer config file
-        (os.path.join('share', package_name,'models/pioneer3at/'), glob('./models/pioneer3at/model.config')),
+        (os.path.join('share', package_name,'models/4WD_robot/'), glob('./models/4WD_robot/model.config')),
 
         # Path to the target sdf file
         (os.path.join('share', package_name,'models/Target/'), glob('./models/Target/model.sdf')),
 
         # Path to the target config file
         (os.path.join('share', package_name,'models/Target/'), glob('./models/Target/model.config')),
-
-        # Path to the world file (i.e. warehouse + global environment)
-        (os.path.join('share', package_name,'models/'), glob('./worlds/*')),
+        
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Tommaso Van Der Meer',
-    maintainer_email='tommaso.vandermeer@student.unisi.it',
-    description='This package creates a simulation in Gazebo which includes a differential drive robot with Lidar and a Hospital world',
+    maintainer='Tommaso Van Der Meer, Dhaval Lad (modified for tactical decision maker with discrete action space)',
+    maintainer_email='tommaso.vandermeer@student.unisi.it, dhaval_lad@todo.todo',
+    description='This package creates a simulation in Gazebo which includes a differential drive robot with Lidar and a Outdoor world',
     license='I am a student, I dont know what to put here :)',
     tests_require=['pytest'],
     entry_points={

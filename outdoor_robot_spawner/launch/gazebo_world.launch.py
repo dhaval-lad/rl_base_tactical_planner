@@ -1,6 +1,7 @@
 """
 Demo for spawn_entity.
 Launches Gazebo and spawns a model
+# This launch file launches Gazebo with GUI (visual interface) - use for development and debugging
 """
 # A bunch of software packages that are needed to launch ROS2
 import os
