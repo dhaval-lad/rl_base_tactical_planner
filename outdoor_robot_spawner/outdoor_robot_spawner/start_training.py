@@ -30,7 +30,7 @@ class TrainingNode(Node):
         # "training" - train a new RL model from scratch
         # "retraining" - continue training from a previously saved model
         # "hyperparam_tuning" - search for better PPO hyperparameters before training
-        self._training_mode = "training"
+        self._training_mode = "random_agent"
 
 # Callback to log and plot rewards during training in real time
 class RewardLoggerCallback(BaseCallback):
