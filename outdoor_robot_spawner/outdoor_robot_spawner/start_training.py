@@ -15,7 +15,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from stable_baselines3.common.callbacks import BaseCallback
 from datetime import datetime
-from ament_index_python.packages import get_package_share_directory
+
+# Fixed source path for this package
+PKG_SRC_DIR = '/home/dhaval_lad/dhaval_ws/src/Outdoor_navigation_decision_making/outdoor_robot_spawner'
 
 # TrainingNode is the main ROS2 node for training and evaluation
 class TrainingNode(Node):
@@ -28,7 +30,7 @@ class TrainingNode(Node):
         # "training" - train a new RL model from scratch
         # "retraining" - continue training from a previously saved model
         # "hyperparam_tuning" - search for better PPO hyperparameters before training
-        self._training_mode = "random_agent"
+        self._training_mode = "training"
 
 # Callback to log and plot rewards during training in real time
 class RewardLoggerCallback(BaseCallback):
@@ -36,7 +38,7 @@ class RewardLoggerCallback(BaseCallback):
         super(RewardLoggerCallback, self).__init__(verbose)
 
         # Directory to save reward plots
-        save_path = os.path.join(get_package_share_directory('outdoor_robot_spawner'), 'reward_plots')
+        save_path = os.path.join(PKG_SRC_DIR, 'reward_plots')
         self.save_path = os.path.abspath(os.path.expanduser(save_path))
 
         # Lists to store episode rewards and lengths
@@ -131,10 +133,7 @@ class RewardLoggerCallback(BaseCallback):
 class RealTimePlotterRandomAgent:
     def __init__(self):
         # Directory to save plots
-        save_path = os.path.join(
-            get_package_share_directory('outdoor_robot_spawner'),
-            'reward_plots'
-        )
+        save_path = os.path.join(PKG_SRC_DIR, 'reward_plots')
         self.save_path = os.path.abspath(os.path.expanduser(save_path))
 
         # Set up the plot for random agent
@@ -177,10 +176,8 @@ def main(args=None):
     node.get_logger().info("Training node has been created")
 
     # Set up directories for saving models and logs
-    home_dir = os.path.expanduser('~')
-    pkg_dir = get_package_share_directory('outdoor_robot_spawner')
-    trained_models_dir = os.path.join(home_dir, pkg_dir, 'rl_models')
-    log_dir = os.path.join(home_dir, pkg_dir, 'logs')
+    trained_models_dir = os.path.join(PKG_SRC_DIR, 'rl_models')
+    log_dir = os.path.join(PKG_SRC_DIR, 'logs')
 
     # Create directories if they do not exist
     if not os.path.exists(trained_models_dir):
@@ -284,7 +281,7 @@ def main(args=None):
         # MODE 3: RETRAINING (CONTINUE TRAINING EXISTING MODEL)
         # Loads an existing PPO model and continues training it, saving progress and reward plots.
         node.get_logger().info("Retraining an existent model")
-        trained_model_path = os.path.join(home_dir, pkg_dir, 'rl_models', 'PPO_test_14022025_002626_2.zip')
+        trained_model_path = os.path.join(PKG_SRC_DIR, 'rl_models', 'PPO_test_14022025_002626_2.zip')
         custom_obj = {'action_space': env.action_space, 'observation_space': env.observation_space}
         model = PPO.load(trained_model_path, env=env, custom_objects=custom_obj)
         try:
@@ -346,10 +343,9 @@ def optimize_agent(trial):
     try:
         # Create a new environment for each trial
         env_opt = gym.make('OutDoorEnv-v0')
-        HOME_DIR = os.path.expanduser('~')
-        PKG_DIR = get_package_share_directory('outdoor_robot_spawner')
-        LOG_DIR = os.path.join(HOME_DIR, PKG_DIR, 'logs')
-        SAVE_PATH = os.path.join(HOME_DIR, PKG_DIR, 'tuning', 'trial_{}'.format(trial.number))
+        LOG_DIR = os.path.join(PKG_SRC_DIR, 'logs')
+        SAVE_PATH = os.path.join(PKG_SRC_DIR, 'tuning', 'trial_{}'.format(trial.number))
+        os.makedirs(os.path.dirname(SAVE_PATH), exist_ok=True)
 
         # Choose hyperparameters to test
         model_params = optimize_ppo_refinement(trial)

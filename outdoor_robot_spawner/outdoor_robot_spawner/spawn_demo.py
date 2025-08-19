@@ -1,11 +1,14 @@
 import os 
 import sys
 import rclpy
-from ament_index_python.packages import get_package_share_directory 
 from gazebo_msgs.srv import SpawnEntity
 import math
 import subprocess
 import tempfile
+
+# Fixed source paths
+PKG_SRC_DIR = '/home/dhaval_lad/dhaval_ws/src/Outdoor_navigation_decision_making/outdoor_robot_spawner'
+GRASSHOPPER_DESC_DIR = '/home/dhaval_lad/dhaval_ws/src/grasshopper_description'
 
 def main():
     """
@@ -33,10 +36,7 @@ def main():
         node.get_logger().info("...connected!")
 
     # Get the path to the URDF file for the robot model
-    urdf_file_path = os.path.join(
-        get_package_share_directory('grasshopper_description'),
-        "urdf", "grass_hopper.urdf.xacro"
-    )
+    urdf_file_path = os.path.join(GRASSHOPPER_DESC_DIR, "urdf", "grass_hopper.urdf.xacro")
 
     # Function to convert URDF to SDF using xacro and gz tools
     def convert_urdf_to_sdf(urdf_file):
@@ -91,10 +91,7 @@ def main():
 
     # ----------------- SPAWN TARGET MODEL -----------------
     # Get the path to the SDF file for the target object
-    target_sdf_file_path = os.path.join(
-        get_package_share_directory("outdoor_robot_spawner"),
-        "models", "Target", "model.sdf"
-    )
+    target_sdf_file_path = os.path.join(PKG_SRC_DIR, "models", "Target", "model.sdf")
 
     # Create a request to spawn the target entity
     request = SpawnEntity.Request()

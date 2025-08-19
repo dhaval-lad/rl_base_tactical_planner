@@ -11,7 +11,9 @@ import time
 import matplotlib.pyplot as plt
 import os
 from datetime import datetime
-from ament_index_python.packages import get_package_share_directory
+
+# Fixed source path for this package
+PKG_SRC_DIR = '/home/dhaval_lad/dhaval_ws/src/Outdoor_navigation_decision_making/outdoor_robot_spawner'
 
 class OutDoorEnv(RobotController, Env):
     """
@@ -341,7 +343,7 @@ class OutDoorEnv(RobotController, Env):
         if self.discrete_action == 0:
             # Stop the robot by setting both linear and angular velocities to zero
             action_ = (0.0, 0.0)
-            self.get_logger().error("Full stop action.")
+            self.get_logger().info("Full stop action.")
 
         # Action 1: Follow the global path using pure pursuit controller
         elif self.discrete_action == 1:
@@ -1028,13 +1030,8 @@ class OutDoorEnv(RobotController, Env):
 
         # Save the plot to a file with a timestamp in the filename
         timestamp = datetime.now().strftime('%d%m%Y_%H%M%S')
-        # Dynamically find the package path using ROS2 ament_index_python
-        try:
-            package_path = get_package_share_directory('outdoor_robot_spawner')
-        except Exception as e:
-            self.get_logger().error(f"Could not find package path: {e}")
-            package_path = os.path.expanduser("~")  # fallback to home if not found
-
+        # Use fixed src package path
+        package_path = PKG_SRC_DIR
         eval_dir = os.path.join(package_path, 'evaluation_plots')
         os.makedirs(eval_dir, exist_ok=True)
         save_path = os.path.join(eval_dir, f"performance_plot_{timestamp}.png")

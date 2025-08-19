@@ -8,13 +8,15 @@ import numpy as np
 import math
 from gazebo_msgs.srv import DeleteEntity, SpawnEntity, SetEntityState
 import os
-from ament_index_python.packages import get_package_share_directory
 import subprocess
 import tempfile
 from tf_transformations import euler_from_quaternion
 import scipy.interpolate as si
 import heapq
 from vesc_msgs.msg import ObjectDetectionList
+
+# Fixed source path for grasshopper_description package
+GRASSHOPPER_DESC_DIR = '/home/dhaval_lad/dhaval_ws/src/grasshopper_description'
 
 class RobotController(Node):
     """
@@ -52,7 +54,7 @@ class RobotController(Node):
         self.client_sim = self.create_client(Empty, "/reset_simulation")
 
         ## Spawn robot from URDF file.
-        self.urdf_file_path = os.path.join(get_package_share_directory('grasshopper_description'), "urdf", "grass_hopper.urdf.xacro")
+        self.urdf_file_path = os.path.join(GRASSHOPPER_DESC_DIR, "urdf", "grass_hopper.urdf.xacro")
 
         # Initialize param 
         self.speed = 0.2

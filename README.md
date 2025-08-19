@@ -91,13 +91,22 @@ git clone https://github.com/dhaval-lad/rl_base_tactical_planner.git
 ```
 
 ### Configure Package Paths
-Before building the package, you need to modify the actor model paths in the world file:
 
-1. Open the file `outdoor_robot_spawner/worlds/outdoor_world_0.world`
-2. Navigate to lines 6519 and 6523
-3. Update the actor model paths to match your system's file structure
+Before building the package, you must update several hardcoded file paths to match your system's directory structure. This ensures that the simulation and all scripts can correctly locate required models and resources.
 
-These paths need to be updated to point to the correct location of the actor models on your system.
+#### Actor Model Paths
+- outdoor_world_0.world → lines 6519, 6523 → update actor model paths
+
+#### Python Source Paths
+Several Python files use hardcoded absolute paths for `PKG_SRC_DIR` and `GRASSHOPPER_DESC_DIR`. You must update these variables to match your local workspace structure. The table below lists the files and line numbers where these changes are required:
+
+- outdoorbot_env.py (line 16) → PKG_SRC_DIR
+- robot_controller.py (line 19) → GRASSHOPPER_DESC_DIR
+- spawn_demo.py (lines 10, 11) → PKG_SRC_DIR, GRASSHOPPER_DESC_DIR
+- start_training.py (line 20) → PKG_SRC_DIR
+- trained_agent.py (line 37) → PKG_SRC_DIR
+
+These paths need to be updated to point to the correct location of the different directory, package and models.
 
 ### Build the Workspace
 Build your ROS2 workspace to install the package:

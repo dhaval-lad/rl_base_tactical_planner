@@ -6516,11 +6516,11 @@
     </gui>
 
     <include>
-      <uri>file:///home/dhaval_lad/dhaval_ws/src/Outdoor_naigation_decision_making/outdoor_robot_spawner/models/actor_1</uri>
+      <uri>file:///home/dhaval_lad/dhaval_ws/src/Outdoor_navigation_decision_making/outdoor_robot_spawner/models/actor_1</uri>
     </include>
 
     <include>
-      <uri>file:///home/dhaval_lad/dhaval_ws/src/Outdoor_naigation_decision_making/outdoor_robot_spawner/models/actor_2</uri>
+      <uri>file:///home/dhaval_lad/dhaval_ws/src/Outdoor_navigation_decision_making/outdoor_robot_spawner/models/actor_2</uri>
     </include>
 
     <model name='side walk'>

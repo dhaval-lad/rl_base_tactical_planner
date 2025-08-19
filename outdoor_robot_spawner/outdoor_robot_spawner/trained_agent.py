@@ -32,7 +32,9 @@ from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.env_checker import check_env
 import os
 import numpy as np
-from ament_index_python.packages import get_package_share_directory
+
+# Fixed source path for this package
+PKG_SRC_DIR = '/home/dhaval_lad/dhaval_ws/src/Outdoor_navigation_decision_making/outdoor_robot_spawner'
 
 class TrainedAgent(Node):
     """
@@ -48,11 +50,8 @@ def main(args=None):
     node = TrainedAgent()
     node.get_logger().info("Trained agent node has been created")
 
-    # Get the absolute path to the package share directory using ROS2 ament_index
-    pkg_share_dir = get_package_share_directory('outdoor_robot_spawner')
-
-    # Path to the directory where trained models are stored
-    trained_models_dir = os.path.join(pkg_share_dir, 'rl_models')
+    # Path to the directory where trained models are stored (fixed src path)
+    trained_models_dir = os.path.join(PKG_SRC_DIR, 'rl_models')
 
     # Specify the model filename you want to test
     model_filename = 'PPO_test_14022025_002626.zip'  # <-- Change this to your model file if needed
