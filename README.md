@@ -106,6 +106,10 @@ Several Python files use hardcoded absolute paths for `PKG_SRC_DIR` and `GRASSHO
 - start_training.py (line 20) → PKG_SRC_DIR
 - trained_agent.py (line 37) → PKG_SRC_DIR
 
+**Important**: Update these paths to match your local workspace structure:
+- `PKG_SRC_DIR` should point to: `/home/YOUR_USERNAME/YOUR_WORKSPACE/src/Outdoor_navigation_decision_making/outdoor_robot_spawner`
+- `GRASSHOPPER_DESC_DIR` should point to: `/home/YOUR_USERNAME/YOUR_WORKSPACE/src/grasshopper_description`
+
 These paths need to be updated to point to the correct location of the different directory, package and models.
 
 ### Build the Workspace
@@ -249,7 +253,13 @@ colcon build --packages-select outdoor_robot_spawner
 # Terminal 1: Launch simulation
 ros2 launch outdoor_robot_spawner gazebo_world.launch.py
 
-# Terminal 2: Run random agent
+# Terminal 2: Start object detection
+ros2 run object_detection object_detect_gazebo
+
+# Terminal 3: Start dynamic map
+ros2 run dynamic_map dynamic_map
+
+# Terminal 4: Run random agent
 ros2 launch outdoor_robot_spawner start_training.launch.py
 ```
 
@@ -272,7 +282,13 @@ colcon build --packages-select outdoor_robot_spawner
 # Terminal 1: Launch simulation
 ros2 launch outdoor_robot_spawner gazebo_world.launch.py
 
-# Terminal 2: Run evaluation
+# Terminal 2: Start object detection
+ros2 run object_detection object_detect_gazebo
+
+# Terminal 3: Start dynamic map
+ros2 run dynamic_map dynamic_map
+
+# Terminal 4: Run evaluation
 ros2 launch outdoor_robot_spawner trained_agent.launch.py
 ```
 
@@ -297,7 +313,13 @@ ros2 launch outdoor_robot_spawner headless_world.launch.py
 # Or, to launch with the Gazebo GUI:
 ros2 launch outdoor_robot_spawner gazebo_world.launch.py
 
-# Terminal 2: Start training
+# Terminal 2: Start object detection
+ros2 run object_detection object_detect_gazebo
+
+# Terminal 3: Start dynamic map
+ros2 run dynamic_map dynamic_map
+
+# Terminal 4: Start training
 ros2 launch outdoor_robot_spawner start_training.launch.py
 ```
 
@@ -323,7 +345,13 @@ ros2 launch outdoor_robot_spawner headless_world.launch.py
 # Or, to launch with the Gazebo GUI:
 ros2 launch outdoor_robot_spawner gazebo_world.launch.py
 
-# Terminal 2: Start training
+# Terminal 2: Start object detection
+ros2 run object_detection object_detect_gazebo
+
+# Terminal 3: Start dynamic map
+ros2 run dynamic_map dynamic_map
+
+# Terminal 4: Start Hyperparameter Tuning
 ros2 launch outdoor_robot_spawner start_training.launch.py
 ```
 **Note:** This mode is resource-intensive and may take a long time depending on the search space.
@@ -352,7 +380,13 @@ ros2 launch outdoor_robot_spawner headless_world.launch.py
 # Or, to launch with the Gazebo GUI:
 ros2 launch outdoor_robot_spawner gazebo_world.launch.py
 
-# Terminal 2: Start training
+# Terminal 2: Start object detection
+ros2 run object_detection object_detect_gazebo
+
+# Terminal 3: Start dynamic map
+ros2 run dynamic_map dynamic_map
+
+# Terminal 4: Start retraining
 ros2 launch outdoor_robot_spawner start_training.launch.py
 ```
 
